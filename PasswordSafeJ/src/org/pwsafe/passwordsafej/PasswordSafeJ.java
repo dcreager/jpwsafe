@@ -16,6 +16,7 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 
 import javax.swing.JDialog;
 import javax.swing.JFileChooser;
@@ -202,6 +203,11 @@ public class PasswordSafeJ extends JFrame
 			catch ( IOException e )
 			{
 				LOG.debug1( "IOException" );
+				// TODO handle this exception
+			}
+			catch ( NoSuchAlgorithmException e )
+			{
+				LOG.debug1( "NoSuchAlgorithmException" );
 				// TODO handle this exception
 			}
 		}
