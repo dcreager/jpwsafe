@@ -15,6 +15,7 @@
 #				"-d ..." for debugging and redirected stdout/err
 #    V1.04  04.11.2005  shw	redesigned script; enhanced environment check; introduced -j 
 #				and usage of "-?" or "/?" plus UPPER or lowercase
+#	 V1.1   30.11.2008  rox adapted for Linux x86-64
 
 # == Short Description =========================================================================
 
@@ -48,7 +49,7 @@ _pathfilesep=""; _pathsep=""
 _prefprop=""
 _prg="${0}"
 _vaultdir=""
-_version="V1.04  04.11.2005, shw@schwarzer.d.uunet.de"
+_version="V1.1  30.11.2008, shw@schwarzer.d.uunet.de"
 
 
 # -- functions --
@@ -80,7 +81,7 @@ case "$(uname)" in
       f_UnlinkMe
    ;;
    Linux*)
-      _OSEnv="gtk"; _OS="linux"; _OSPlatform="x86"
+      _OSEnv="gtk"; _OS="linux"; _OSPlatform="x86-64"
 
           _pathsep=':'
       _pathfilesep='/'
